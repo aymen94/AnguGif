@@ -1,0 +1,20 @@
+<div class="row center-xs">
+	<div *ngFor="let item of gifData | async" class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+		<div class="card">
+			<div class="image">
+				<img src={{item.images.downsized.url}} width="100%" />
+				<div class="social">
+					<a onclick="window.open(this.href, 'mywin',
+					'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" href="https://www.facebook.com/sharer/sharer.php?u={{item.embed_url}}" class="social-icon"> <i class="fa fa-facebook"></i></a>
+					<a  onclick="window.open(this.href, 'mywin',
+					'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" href="https://twitter.com/share?url={{item.embed_url}}" class="social-icon"> <i class="fa fa-twitter"></i></a>
+					<a onclick="window.open(this.href, 'mywin',
+					'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" href="https://www.linkedin.com/shareArticle?mini=true&url={{item.embed_url}}" class="social-icon"> <i class="fa fa-linkedin"></i></a>
+					<a onclick="window.open(this.href, 'mywin',
+					'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" href="https://plus.google.com/share?url={{item.embed_url}}" class="social-icon"> <i class="fa fa-google-plus"></i></a>
+				</div>
+			</div>
+			{{item.title}}
+		</div>
+	</div>
+</div>

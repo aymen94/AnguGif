@@ -1,0 +1,51 @@
+  .card {
+    display: inline-block;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.15);
+    margin: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    position: relative;
+    margin-bottom: 5px;
+    transition: all .2s ease-in-out;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.459);
+    z-index: 1;
+  }
+  
+  .card:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    margin-bottom: 54px;
+  }
+  
+  .image {
+    opacity: .6;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+  }
+  
+  .image:hover,.card:hover .image .social {
+    opacity: 1;
+    display: block;
+  }
+
+  .card:hover{
+    transform: scale(1.5);
+    z-index: 5;
+  }
+  .social{
+   padding-top: 10px;
+    display: none;
+    background-color: #1565C0;
+    transition: all .2s ease-in-out;
+  }
+a {
+  position: relative;
+  color: rgb(253, 253, 252);
+  padding:5%;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  
+}
+a:hover{
+  background-color:darkslategray;
+  transform: scale(1.2);
+}
